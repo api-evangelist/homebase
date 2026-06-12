@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "homebase": "https://www.joinhomebase.com/",
+    "aid": "homebase",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "image": "image",
+    "Employee": "Person",
+    "Schedule": "Schedule",
+    "TimeEntry": "https://www.joinhomebase.com/vocab/TimeEntry",
+    "Shift": "https://www.joinhomebase.com/vocab/Shift",
+    "Location": "Place",
+    "Team": "Organization",
+    "Payroll": "https://www.joinhomebase.com/vocab/Payroll",
+    "TimesheetEntry": "https://www.joinhomebase.com/vocab/TimesheetEntry",
+    "Break": "https://www.joinhomebase.com/vocab/Break",
+    "Department": "https://www.joinhomebase.com/vocab/Department",
+    "Role": "https://www.joinhomebase.com/vocab/Role",
+    "startTime": "startDate",
+    "endTime": "endDate",
+    "clockIn": "https://www.joinhomebase.com/vocab/clockIn",
+    "clockOut": "https://www.joinhomebase.com/vocab/clockOut",
+    "wage": "https://www.joinhomebase.com/vocab/wage",
+    "hoursWorked": "https://www.joinhomebase.com/vocab/hoursWorked",
+    "overtimeHours": "https://www.joinhomebase.com/vocab/overtimeHours",
+    "payPeriod": "https://www.joinhomebase.com/vocab/payPeriod",
+    "employeeId": "identifier",
+    "locationId": "https://www.joinhomebase.com/vocab/locationId",
+    "published": "datePublished",
+    "modified": "dateModified",
+    "tags": "keywords",
+    "provider": {
+      "@id": "https://www.joinhomebase.com/",
+      "@type": "Organization",
+      "name": "Homebase",
+      "url": "https://www.joinhomebase.com/",
+      "sameAs": [
+        "https://www.linkedin.com/company/homebase-app",
+        "https://x.com/joinhomebase"
+      ]
+    }
+  }
+}

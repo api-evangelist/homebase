@@ -92,6 +92,12 @@ common:
   - type: FinOps
     url: finops/homebase-finops.yml
 
+  - type: JSONLDContext
+    url: json-ld/homebase-context.jsonld
+
+  - type: BlogPosts
+    url: blogs/blogs.json
+
 maintainers:
 
   - FN: Kin Lane
