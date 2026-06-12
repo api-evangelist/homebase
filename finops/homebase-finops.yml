@@ -1,0 +1,125 @@
+name: Homebase FinOps Framework
+description: >
+  FinOps cost and usage framework for Homebase API and platform consumption,
+  aligned to the FinOps Foundation FOCUS specification. Covers cost allocation
+  by location, employee count, add-on services, and API usage for small business
+  operators managing workforce management spend.
+version: '1.0'
+url: https://www.joinhomebase.com/pricing
+focus_version: '1.0'
+
+cost_model:
+  type: Per-Location Subscription
+  billing_period: monthly
+  annual_discount_percent: 20
+  currency: USD
+  notes: >
+    Costs scale by number of business locations and selected plan tier.
+    Employees are unlimited on all paid plans. Payroll add-on costs scale
+    per active employee paid in each billing period.
+
+dimensions:
+
+  - name: Plan Tier
+    description: The subscription tier selected (Basic, Essentials, Plus, All-in-One)
+    values:
+      - Basic (Free)
+      - Essentials ($24.95/location/month)
+      - Plus ($59.95/location/month)
+      - All-in-One ($99.95/location/month)
+    cost_driver: true
+
+  - name: Location Count
+    description: Number of active business locations on the account
+    unit: location
+    cost_driver: true
+    notes: Each additional location is billed at the selected plan rate
+
+  - name: Billing Cadence
+    description: Monthly or annual billing selection
+    values:
+      - Monthly (standard rate)
+      - Annual (20% discount applied)
+    cost_driver: true
+
+  - name: Payroll Employees
+    description: Number of employees processed through payroll in a billing period
+    unit: employee
+    cost_driver: true
+    notes: "$6 per active employee paid per month; requires $39 base fee"
+
+  - name: Add-On Services
+    description: Optional feature add-ons billed separately per location or per use
+    cost_driver: true
+    items:
+      - name: Payroll Base
+        price: 39
+        unit: month
+      - name: Payroll Per Employee
+        price: 6
+        unit: employee per month
+      - name: Task Manager
+        price: 13
+        unit: location per month
+      - name: Hiring Assistant
+        price: 30
+        unit: job post
+      - name: Job Post Boost
+        price: 79
+        unit: boost
+      - name: Background Check
+        price: 30
+        unit: check
+      - name: Tip Manager
+        price: 25
+        unit: location per month
+
+optimization:
+
+  - strategy: Annual Billing Commitment
+    description: Switch from monthly to annual billing to save 20% on Essentials, Plus, and All-in-One plans
+    savings_percent: 20
+    applicability: All paid plan tiers
+
+  - strategy: Right-Size Plan Per Location
+    description: >
+      Audit feature usage per location to confirm the active plan tier is
+      appropriate. Downgrade locations that do not use advanced features
+      (e.g., AI scheduling, PTO controls, HR tools) to a lower tier.
+    applicability: Multi-location businesses
+
+  - strategy: Payroll Employee Reconciliation
+    description: >
+      Reconcile payroll employee count monthly to ensure only active employees
+      are processed, as the $6/employee charge applies to each employee paid
+      in the billing period.
+    applicability: Payroll add-on subscribers
+
+  - strategy: Add-On Audit
+    description: >
+      Review active add-ons (Task Manager, Tip Manager) per location quarterly
+      and disable on locations where features are unused.
+    applicability: Businesses with multiple add-ons
+
+allocation:
+
+  - dimension: Location
+    description: Allocate platform costs to cost centers by business location
+    method: Direct — one subscription charge per location per billing period
+
+  - dimension: Department or Team
+    description: >
+      Sub-allocate scheduling and time tracking costs by team or department
+      using Homebase's departments and permissions feature (Plus/All-in-One)
+    method: Proportional by employee headcount per department
+
+  - dimension: Payroll Run
+    description: Allocate payroll add-on costs by employee count per payroll run
+    method: Per-employee charge at $6 per active employee paid
+
+governance:
+  - Set budget alerts based on location count thresholds
+  - Review add-on subscriptions quarterly for utilization
+  - Consolidate locations where possible to reduce per-location charges
+  - Leverage the 14-day All-in-One trial before committing to the top tier
+  - Use annual billing only after validating platform fit over at least one quarter

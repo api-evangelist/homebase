@@ -1,0 +1,139 @@
+name: Homebase Plans and Pricing
+description: >
+  Homebase offers four subscription tiers priced per location per month, with
+  unlimited employees on all paid plans. Annual billing provides a 20% discount.
+  Payroll is available as an add-on starting at $39/month base plus $6/month per
+  active employee. API access is available to account holders via the Settings
+  panel.
+version: '0.1'
+url: https://www.joinhomebase.com/pricing
+
+plans:
+
+  - name: Basic
+    description: >
+      Free forever plan for a single location with up to 10 employees. Includes
+      basic scheduling, basic time tracking, and point-of-sale integration.
+    price: 0
+    currency: USD
+    period: month
+    unit: location
+    features:
+      - Basic employee scheduling
+      - Basic time tracking
+      - Point-of-sale integration
+      - Single location
+      - Up to 10 employees
+    limitations:
+      - Maximum 1 location
+      - Maximum 10 employees
+      - No advanced scheduling features
+      - No team communication
+
+  - name: Essentials
+    description: >
+      Advanced scheduling and time tracking with team communication for unlimited
+      employees at a single location.
+    price: 24.95
+    currency: USD
+    period: month
+    unit: location
+    annual_price: 19.95
+    features:
+      - Everything in Basic
+      - Advanced scheduling
+      - Advanced time tracking
+      - Attendance tracking
+      - Team communication and messaging
+      - Performance reports
+      - Unlimited employees
+    limitations:
+      - No AI-powered scheduling
+      - No PTO controls
+      - No labor cost management
+
+  - name: Plus
+    description: >
+      Adds AI-powered scheduling, PTO controls, departments and permissions for
+      growing teams needing stronger workforce controls.
+    price: 59.95
+    currency: USD
+    period: month
+    unit: location
+    annual_price: 47.95
+    features:
+      - Everything in Essentials
+      - AI-powered scheduling
+      - PTO controls and accruals
+      - Departments and permissions
+      - Labor cost controls
+      - Advanced reporting
+      - Unlimited employees
+
+  - name: All-in-One
+    description: >
+      Comprehensive workforce management with employee onboarding, HR and
+      compliance tools, and full multi-location management support.
+    price: 99.95
+    currency: USD
+    period: month
+    unit: location
+    annual_price: 79.95
+    features:
+      - Everything in Plus
+      - Employee onboarding
+      - Labor cost management
+      - HR and compliance tools
+      - Multi-location management
+      - Priority support
+      - Unlimited employees
+
+addons:
+
+  - name: Payroll
+    description: Full-service payroll processing integrated with time tracking data.
+    base_price: 39
+    per_employee_price: 6
+    currency: USD
+    period: month
+    note: Base fee plus $6 per active employee paid per month
+
+  - name: Task Manager
+    description: Assign and track team tasks across locations.
+    price: 13
+    currency: USD
+    period: month
+    unit: location
+
+  - name: Hiring Assistant
+    description: AI-assisted job posting and applicant tracking.
+    price: 30
+    currency: USD
+    unit: per job post
+    note: Starting price per post
+
+  - name: Job Post Boosts
+    description: Sponsored job post promotion on external job boards.
+    price: 79
+    currency: USD
+    unit: per job post
+    note: Starting price per boost
+
+  - name: Background Checks
+    description: Employee background screening service.
+    price: 30
+    currency: USD
+    unit: per check
+
+  - name: Tip Manager
+    description: Tip pooling and distribution management for hourly teams.
+    price: 25
+    currency: USD
+    period: month
+    unit: location
+
+trial:
+  duration: 14
+  unit: days
+  plan: All-in-One
+  credit_card_required: false

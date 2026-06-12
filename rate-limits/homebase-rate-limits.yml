@@ -1,0 +1,50 @@
+name: Homebase API Rate Limits
+description: >
+  Homebase does not publicly document specific rate limit thresholds for its REST
+  API. API access is granted per account via an API key requested through the
+  Homebase account settings panel. Developers should implement standard rate limit
+  handling with exponential backoff and respect HTTP 429 (Too Many Requests)
+  responses. Contact Homebase support or partners@joinhomebase.com for
+  production-scale rate limit details and partnership API access agreements.
+version: '0.1'
+url: https://app.joinhomebase.com/api-docs
+
+limits:
+
+  - scope: Account API Key
+    description: >
+      Each Homebase account is issued a single API key through the account
+      settings panel. Rate limits are enforced per API key. Specific numeric
+      thresholds are not publicly disclosed; standard REST API throttling
+      applies.
+    known: false
+    notes: >
+      Implement exponential backoff when receiving HTTP 429 responses.
+      The Retry-After header, if present, should be respected.
+
+  - scope: Public Endpoints
+    description: >
+      Public API endpoints under /api/public are rate-limited to prevent
+      abuse. Homebase has not published exact request-per-minute or
+      request-per-day limits in their public documentation.
+    known: false
+    base_url: https://app.joinhomebase.com/api/public
+
+headers:
+  - name: Authorization
+    description: API key passed in the Authorization header for all requests
+    format: "Authorization: <api_key>"
+
+errors:
+  - code: 429
+    meaning: Too Many Requests — rate limit exceeded; back off and retry
+  - code: 401
+    meaning: Unauthorized — invalid or missing API key
+  - code: 403
+    meaning: Forbidden — API key lacks permission for the requested resource
+
+recommendations:
+  - Implement exponential backoff with jitter on 429 responses
+  - Cache responses where possible to reduce redundant API calls
+  - Use webhooks for real-time event data instead of polling endpoints
+  - Contact Homebase support for enterprise or high-volume rate limit accommodations

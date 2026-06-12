@@ -1,0 +1,98 @@
+aid: homebase
+name: Homebase
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/homebase/refs/heads/main/apis.yml
+created: 2026-06-12
+modified: 2026-06-12
+specificationVersion: '0.19'
+description: >
+  Homebase is an all-in-one workforce management platform for small businesses,
+  offering employee scheduling, time tracking, payroll, team communication, and HR
+  tools designed for hourly teams. Founded in 2014 and headquartered in San
+  Francisco, California, Homebase serves over 100,000 small businesses across
+  restaurants, retail, and service industries. The platform provides a REST API
+  that enables third-party integrations and custom applications to access
+  scheduling, time tracking, payroll sync, and team management data. Developers
+  can authenticate via API key obtained through the Homebase account settings
+  portal, with the base endpoint at app.joinhomebase.com/api/public. Homebase
+  integrates natively with major point-of-sale systems, payroll providers, and
+  HR platforms including Square, Toast, Clover, Gusto, ADP, and QuickBooks.
+tags:
+  - scheduling
+  - time-tracking
+  - payroll
+  - HR
+  - workforce-management
+  - team-communication
+  - employee-scheduling
+  - small-business
+  - hourly-workers
+  - integrations
+
+apis:
+
+  - aid: homebase:homebase-api
+    name: Homebase API
+    description: >
+      The Homebase REST API provides programmatic access to employee scheduling,
+      time tracking, payroll synchronization, and team management features.
+      Authenticated via API key, it enables third-party developers and partners
+      to build custom integrations with the Homebase workforce management platform.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://app.joinhomebase.com/api-docs
+    baseURL: https://app.joinhomebase.com/api/public
+    tags:
+      - scheduling
+      - time-tracking
+      - payroll
+      - team-communication
+      - employees
+    properties:
+      - type: Documentation
+        url: https://app.joinhomebase.com/api-docs
+      - type: Authentication
+        url: https://app.joinhomebase.com/api-docs#authentication
+
+common:
+
+  - type: Website
+    url: https://www.joinhomebase.com/
+
+  - type: Documentation
+    url: https://app.joinhomebase.com/api-docs
+
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/homebase-app
+
+  - type: Blog
+    url: https://www.joinhomebase.com/blog/
+
+  - type: Pricing
+    url: https://www.joinhomebase.com/pricing
+
+  - type: StatusPage
+    url: https://status.joinhomebase.com/
+
+  - type: X
+    url: https://x.com/joinhomebase
+
+  - type: Support
+    url: https://support.joinhomebase.com/s/
+
+  - type: Integrations
+    url: https://www.joinhomebase.com/integrations
+
+  - type: Plans
+    url: plans/homebase-plans-pricing.yml
+
+  - type: RateLimits
+    url: rate-limits/homebase-rate-limits.yml
+
+  - type: FinOps
+    url: finops/homebase-finops.yml
+
+maintainers:
+
+  - FN: Kin Lane
+    email: kin@apievangelist.com
