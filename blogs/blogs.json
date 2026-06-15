@@ -4,5 +4,14 @@
   "rssConfirmed": false,
   "note": "No RSS/Atom feed found at standard paths (/feed, /blog/feed/, /rss.xml, /blog/rss.xml). Blog is at https://www.joinhomebase.com/blog/ but no machine-readable feed is publicly available.",
   "lastChecked": "2026-06-12",
-  "posts": []
+  "posts": [],
+  "repo": "homebase",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/homebase-app",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
