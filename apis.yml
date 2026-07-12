@@ -56,6 +56,12 @@ apis:
 
 common:
 
+  - type: TrustCenter
+    url: security/homebase-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/homebase-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/homebase-domain-security.yml
   - type: Website
     url: https://www.joinhomebase.com/
 

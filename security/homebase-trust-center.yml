@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://trust.joinhomebase.com/
+url: https://trust.joinhomebase.com/
+certifications:
+- SOC 2
+- PCI DSS
+evidence:
+- source: https://trust.joinhomebase.com/
+  keywords:
+  - soc 2
+  - pci dss
+  - pci-dss
+  - trust center
