@@ -7,12 +7,6 @@
   "lastChecked": "2026-06-21",
   "feeds": [
     {
-      "source": "https://www.joinhomebase.com/blog/",
-      "feed_url": "",
-      "saved": 0,
-      "method": "agent-scrape"
-    },
-    {
       "source": "https://www.linkedin.com/company/homebase-app",
       "feed_url": "https://www.linkedin.com/company/homebase-app",
       "title": "",
@@ -20,7 +14,7 @@
       "method": "none"
     }
   ],
-  "fetched": "2026-06-27T12:47:03Z",
-  "post_count": 2,
-  "agent_pulled": "2026-06-27"
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 5,
+  "agent_pulled": "2026-07-04"
 }
