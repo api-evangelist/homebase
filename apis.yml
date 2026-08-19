@@ -17,7 +17,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homebase.p
 url: https://raw.githubusercontent.com/api-evangelist/homebase/refs/heads/main/apis.yml
 created: 2026-06-12
 modified: 2026-06-12
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >
   Homebase is an all-in-one workforce management platform for small businesses,
   offering employee scheduling, time tracking, payroll, team communication, and HR
