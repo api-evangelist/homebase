@@ -42,15 +42,15 @@ description: >
   integrates natively with major point-of-sale systems, payroll providers, and
   HR platforms including Square, Toast, Clover, Gusto, ADP, and QuickBooks.
 tags:
-  - scheduling
-  - time-tracking
-  - payroll
+  - Scheduling
+  - Time Tracking
+  - Payroll
   - HR
-  - workforce-management
-  - team-communication
-  - employee-scheduling
-  - small-business
-  - hourly-workers
+  - Workforce Management
+  - Team Communication
+  - Employee Scheduling
+  - Small Business
+  - Hourly Workers
   - Integration
 tags_raw:
   - scheduling
@@ -77,11 +77,11 @@ apis:
     humanURL: https://app.joinhomebase.com/api-docs
     baseURL: https://app.joinhomebase.com/api/public
     tags:
-      - scheduling
-      - time-tracking
-      - payroll
-      - team-communication
-      - employees
+      - Scheduling
+      - Time Tracking
+      - Payroll
+      - Team Communication
+      - Employees
     tags_raw:
       - scheduling
       - time-tracking
