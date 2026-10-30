@@ -1,4 +1,4 @@
-# Homebase (homebase)
+# Homebase
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,50 +64,114 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Homebase is an all-in-one workforce management platform built for small businesses and hourly teams. Founded in 2014 and headquartered in San Francisco, California, Homebase provides employee scheduling, time tracking, payroll, team communication, and HR tools that help small business owners manage their teams efficiently. The platform serves over 100,000 businesses across restaurants, retail, and service industries. Homebase offers a REST API enabling developers and integration partners to access scheduling, time tracking, and workforce data programmatically.
+Homebase is an all-in-one workforce management platform for small businesses, offering employee scheduling, time tracking, payroll, team communication, and HR tools designed for hourly teams. Founded in 2014 and headquartered in San Francisco, California, Homebase serves over 100,000 small businesses across restaurants, retail, and service industries. The platform provides a REST API that enables third-party integrations and custom applications to access scheduling, time tracking, payroll sync, and team management data. Developers can authenticate via API key obtained through the Homebase account settings portal, with the base endpoint at app.joinhomebase.com/api/public. Homebase integrates natively with major point-of-sale systems, payroll providers, and HR platforms including Square, Toast, Clover, Gusto, ADP, and QuickBooks.
 
-APIs.json: [https://raw.githubusercontent.com/api-evangelist/homebase/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/homebase/refs/heads/main/apis.yml)
+**Areas:** Scheduling · Time Tracking · Payroll · Human Resources · Workforce Management · Team Communication · Employee Scheduling · Small Business · Hourly Workers · Integration
 
-Naftiko: [https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=homebase-api-evangelist&utm_content=repo](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=homebase-api-evangelist&utm_content=repo)
+## Homebase on APIs.io
 
-## Tags
+Everything profiled for Homebase is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/homebase/](https://apis.io/providers/homebase/)** — or go straight to one of the APIs or properties below.
 
-scheduling, time-tracking, payroll, HR, workforce-management, team-communication, employee-scheduling, small-business, hourly-workers, integrations
+### APIs (1)
 
-## APIs
+- [Homebase API](https://apis.io/apis/homebase/homebase-api/) — The Homebase REST API provides programmatic access to employee scheduling, time tracking, payroll synchronization, and team management features.…
 
-### Homebase API
+### Published properties
 
-The Homebase REST API provides programmatic access to employee scheduling, time tracking, payroll synchronization, and team management features. Authenticated via API key, it enables third-party developers and partners to build custom integrations with the Homebase workforce management platform.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Documentation:** [https://app.joinhomebase.com/api-docs](https://app.joinhomebase.com/api-docs)
-- **Base URL:** https://app.joinhomebase.com/api/public
+#### JSON-LD (1)
 
-## Plans / Rate Limits / FinOps
+Linked-data contexts for the provider's vocabulary.
 
-- **Plans and Pricing:** [plans/homebase-plans-pricing.yml](plans/homebase-plans-pricing.yml) — Four tiers: Basic (free), Essentials ($24.95/location/month), Plus ($59.95/location/month), and All-in-One ($99.95/location/month), with a 20% annual billing discount and optional payroll and add-on services.
-- **Rate Limits:** [rate-limits/homebase-rate-limits.yml](rate-limits/homebase-rate-limits.yml) — Rate limits are enforced per API key; specific thresholds are not publicly disclosed. Implement exponential backoff on HTTP 429 responses.
-- **FinOps:** [finops/homebase-finops.yml](finops/homebase-finops.yml) — FOCUS-aligned cost framework covering per-location subscription costs, payroll per-employee charges, and add-on service optimization strategies.
+- [Homebase Context](https://apis.io/jsonld/homebase/homebase-context/)
 
-## Timestamps
+#### Security (3)
 
-- **Created:** 2026-06-12
-- **Modified:** 2026-06-12
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Homebase Domain Security](https://apis.io/security/homebase/homebase-domain-security/)
+- [Homebase Trust Center](https://apis.io/security/homebase/homebase-trust-center/)
+- [Homebase Vulnerability Disclosure](https://apis.io/security/homebase/homebase-vulnerability-disclosure/)
 
-| Property | URL |
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Homebase Plans Pricing](https://apis.io/plans/homebase/homebase-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Homebase Rate Limits](https://apis.io/rate-limits/homebase/homebase-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Homebase Finops](https://apis.io/finops/homebase/homebase-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.joinhomebase.com/)
+- [Documentation](https://app.joinhomebase.com/api-docs)
+- [Pricing](https://www.joinhomebase.com/pricing)
+- [Support](https://support.joinhomebase.com/s/)
+- [Blog](https://www.joinhomebase.com/blog/)
+- [Status](https://status.joinhomebase.com/)
+
+## API Evangelist rating
+
+**Kin Score 24.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Website | https://www.joinhomebase.com/ |
-| Documentation | https://app.joinhomebase.com/api-docs |
-| LinkedIn | https://www.linkedin.com/company/homebase-app |
-| Blog | https://www.joinhomebase.com/blog/ |
-| Pricing | https://www.joinhomebase.com/pricing |
-| Status Page | https://status.joinhomebase.com/ |
-| X (Twitter) | https://x.com/joinhomebase |
-| Support | https://support.joinhomebase.com/s/ |
-| Integrations | https://www.joinhomebase.com/integrations |
+| Discoverability | 66.1 |
+| Contract quality | 10.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 26.3 |
 
-## Maintainers
+**Agent readiness 3.1** — human-only
 
-**Kin Lane** — kin@apievangelist.com
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.5** — Employment & Payroll
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/homebase/](https://apis.io/providers/homebase/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Homebase: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/homebase/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
